@@ -1,0 +1,35 @@
+.cell {
+  width:30px;
+  height:30px;
+  border-left:1px #000 solid;
+  border-top:1px #000 solid;
+  float:left;
+}
+
+.cell:last-child {
+  border-right:1px #000 solid;
+}
+
+.row:last-child .cell {
+  border-bottom:1px #000 solid;
+}
+
+.row:after {
+  content:".";
+  display:block;
+  height:0;
+  visibility:hidden;
+  clear:both;
+}
+
+.cell.player1 {
+  background-color:blue;
+}
+
+.cell.player2 {
+  background-color:red;
+}
+
+.hidden {
+  display:none;
+}
