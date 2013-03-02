@@ -5,7 +5,7 @@ require(["games/games.js"], function(games) {
       boardElement: $("#board")
     });
 
-    game.gridState.bindPropertyTo("currentMoveIndex", "#current-move");
+    game.gridState.bind("currentMoveIndex", "#current-move");
 
     $("#load-game").click(function(e) {
       game.loadMoves($("textarea").contents().text());

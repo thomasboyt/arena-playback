@@ -31,7 +31,7 @@ define(["games/game.js", "lib/dom-binding.js"], function(Game, DomBindable) {
       for (var j=0; j<7; j++) {
         var name = i + 'x' + j;
         row.append("<div class='cell' id='cell" + name + "'>");
-        this.gridState.bindPropertyTo(name, "#cell" + name, 'class')
+        this.gridState.bind(name, "#cell" + name, {type: 'class'})
       }
     }
   }
